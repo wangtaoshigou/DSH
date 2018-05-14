@@ -6,6 +6,7 @@ import List from '../components/content/List/List'
 import Market from '../components/content/Market/Market'
 import Login from '../components/content/Login/Login'
 import Registe from '../components/content/Login/Registe'
+import shop from '../components/content/Shop/Shop'
 
 Vue.use(Router)
 
@@ -29,6 +30,11 @@ export default new Router({
       path: '/market',
       name: 'Market',
       component: Market
+    },
+    {
+      path: '/shop',
+      name: 'shop',
+      component: shop
     },
     {
       path: '/login',

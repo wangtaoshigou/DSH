@@ -6,7 +6,7 @@
         <router-link to="./list" tag="li">
             <i class="fa fa-bars"></i>
         </router-link>
-        <router-link to="./look" tag="li">
+        <router-link to="./shop" tag="li">
             <i class="fa fa-sticky-note-o"></i>
         </router-link>
         <router-link to="./market" tag="li">

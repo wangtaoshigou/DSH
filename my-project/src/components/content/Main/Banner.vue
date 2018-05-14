@@ -38,7 +38,8 @@ export default {
        new Swiper('.banner',{
            pagination: {
                el: '.swiper-pagination'
-           }
+           },
+           autoplay: true
        })
    }
 }

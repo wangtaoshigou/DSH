@@ -11,7 +11,7 @@
             <li class="title">{{irr.title}}</li>
             <li class="dis">{{irr.subtitle}}</li>
             <li class="img">
-                <img :src="irr.img" alt="">
+                <img v-lazy="irr.img" alt="">
             </li>  
         </ul>
     </div>

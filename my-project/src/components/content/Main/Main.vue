@@ -55,6 +55,9 @@ export default {
         box-shadow: 0 2px 3px rgba(0,0,0,.12);
         margin-top: 12px;
     }
+    .main{
+        background: #f4f4f4;
+    }
 </style>
 
 
