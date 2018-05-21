@@ -1,0 +1,9 @@
+const ADD_GOOD_IN_CAR = 'ADD_GOOD_IN_CAR'
+const REDUCE_GOOD_IN_CAR = 'REDUCE_GOOD_IN_CAR'
+const INIT_CAR = 'INIT_CAR'
+
+export { 
+    ADD_GOOD_IN_CAR, 
+    REDUCE_GOOD_IN_CAR,
+    INIT_CAR 
+}

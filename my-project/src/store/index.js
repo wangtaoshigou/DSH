@@ -2,12 +2,11 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 
 Vue.use (Vuex)
-
-import allen from './allen'
+import tony from './tony'
 
 const store = new Vuex.Store({
     modules: {
-        allen
+        tony
     }
 })
 

@@ -12,8 +12,8 @@ Vue.prototype.$http = axios
 Vue.config.productionTip = false
 
 Vue.use(MintUI)
-
 import store from './store'
+
 
 /* eslint-disable no-new */
 new Vue({

@@ -1,33 +1,31 @@
 <template>
     <div class="market">
-        <mt-cell 
-            v-for = "good in cars" :key = "good.id"
-            :title="good.title" :label = "good.price">
-            <mt-button @click = "reduceGoodInCar(good)" size="small">-</mt-button>
-            <input type="text" class="mt-inp" v-model = "good.num">
-            <mt-button @click = "addGoodInCar(good)" size="small">+</mt-button>
+        <mt-cell v-for="good in car" :key="good.id" :title="good.title" :label="good.price">
+            <mt-button @click= 'reduceGoodInCar(good)' size="small">-</mt-button>
+            <input type="text" class="mt-inp" v-model="good.num">
+            <mt-button @click = 'addGoodInCar(good)' size="small">+</mt-button>
         </mt-cell>
+        <total></total>
         <app-footer></app-footer>
     </div>
 </template>
 
 <script>
 import AppFooter from '../../common/Header/Footer'
-import { mapState, mapActions } from '../../../../../../../DSH/my-project/node_modules/vuex';
+import { mapState, mapActions } from 'vuex'
+import Total from './Total'
 export default {
     name: 'market',
     components: {
-        AppFooter
+        AppFooter, Total
     },
     computed: {
         ...mapState({
-            cars: (state) => state.allen.car
+            car: (state) => state.tony.car
         })
     },
     methods: {
-        ...mapActions(
-            ['addGoodInCar','reduceGoodInCar']
-        )
+        ...mapActions(['addGoodInCar', 'reduceGoodInCar'])
     }
 }
 </script>

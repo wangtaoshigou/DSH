@@ -17,6 +17,9 @@ export default {
   name: 'App',
   components: {
     // AppHeader,AppFooter
+  },
+  mounted () {
+    this.$store.dispatch ('initCar')
   }
 }
 </script>
